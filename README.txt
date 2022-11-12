@@ -164,3 +164,7 @@ Changed and update ApplicationDbContext.cs
 In console AddCategoryToDb have duplicate error "The name 'AddCategoryToDb' is used by an existing migration."
 Removed Migation and added once again and it confirmed new categories table via the SQL SOE
 Update my readme.txt and commit the changes
+Part-2.1 completed successfully 
+06:02 PM 
+
+Time to take a break......
