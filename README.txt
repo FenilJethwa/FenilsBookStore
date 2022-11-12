@@ -141,3 +141,18 @@ it showing SqlServerValueGenerationStrategy does not exist in the  current conte
 03:05 PM Restart from Part-1.
 
 5:10 PM completed Part-1 and added README.txt and README.md files
+
+************* (Part-2 Again) *************
+05:19 PM Now Part-2 
+2.1  Creating Db
+Build the application for checking there is no error....
+No error found... Moved further
+Review and change DefaultConnection code in appsettings.json
+Create a migration using NuGet Package Manager Console.
+New Migreation File is named by "20221112222454_AddDefaultIdentityMigration.cs"
+Review the file as per SQL Syntax.
+Update the database successfully...
+Review SQL Server Object Explorer there were tables created in FenilsBookStore.
+Run the application it works successfully 
+Update Readme.txt 
+05:39 PM
