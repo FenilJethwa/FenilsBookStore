@@ -155,4 +155,12 @@ Update the database successfully...
 Review SQL Server Object Explorer there were tables created in FenilsBookStore.
 Run the application it works successfully 
 Update Readme.txt 
+
 05:39 PM
+
+Added new class in FenilsBooks.Models and named it as Category.cs update the code and save.
+Added new migration via console name as"20221112225226_AddCategoryToDb.cs"
+Changed and update ApplicationDbContext.cs 
+In console AddCategoryToDb have duplicate error "The name 'AddCategoryToDb' is used by an existing migration."
+Removed Migation and added once again and it confirmed new categories table via the SQL SOE
+Update my readme.txt and commit the changes
