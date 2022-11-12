@@ -1,4 +1,4 @@
-using FenilsBookStore.Data;
+using FenilsBookStore.DataAccess.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -32,7 +32,7 @@ namespace FenilsBookStore
                     Configuration.GetConnectionString("DefaultConnection")));
             
 
-            services.AddDefaultIdentity<IdentityUser>()
+            services.AddDefaultIdentity<IdentityUser>()  // removed the option that set the identity user to false
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
@@ -60,13 +60,24 @@ namespace FenilsBookStore
             app.UseAuthentication();
             app.UseAuthorization();
 
+            /* app.UseEndpoints(endpoints =>
+             {
+                 endpoints.MapControllerRoute(
+                     name: "default",
+                     pattern: "{area:Customer}/{controller=Home}/{action=Index}/{id?}");
+                 endpoints.MapRazorPages();
+             });*/
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                    name: "default",
+                    name: "MyArea",
+                    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapAreaControllerRoute(
+                    name: "defaultArea",
+                    areaName: "Customer",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-                endpoints.MapRazorPages();
             });
+
         }
     }
 }
