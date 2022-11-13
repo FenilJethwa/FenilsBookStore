@@ -28,6 +28,24 @@ namespace FenilsBookStore.Areas.Admin.Controllers
             return View();
         }
 
+        public IActionResult Upsert(int? id)         // action method for Upsert
+        {
+            Category category = new Category();
+            if (id == null)
+            {
+                // This is for create
+                return View(category);
+            }
+
+            // This is for edit
+            category = _unitOfWork.Category.Get(id.GetValueOrDefault());
+            if (category == null)
+            {
+                return NotFound();
+            }
+            return View();
+        }
+
         // API calls here
         #region API CALLS
         [HttpGet]

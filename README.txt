@@ -196,3 +196,11 @@ Made new controller called CategoryController.cs and modified using statements
 Added a new Category folder and razor view Index.cshtml added code given by sir
 Linked the indes.cshtml in _Layout.cshtml page inside dropdown menu....
 commiting changes to github
+
+Added code in Index.cshtml to add icons...run application successful
+new category.js file in wwwroot/js folder....added coded given by sir...removed the icon code from Index.cshtml
+Added an IActionResult method in the CategoryController.cs and added new View Upsert.cshtml...content given by sir
+Created partial views _CreateAndBackToListButton.cshtml and _EditAndBackToListButton.cshtml
+Modify the Upsert.cshtml with @model statement
+Added the asp-action to Index.cshtml page....and run the application...not showing the create category or upsert page
+commiting changes and taking a break....06:10PM
