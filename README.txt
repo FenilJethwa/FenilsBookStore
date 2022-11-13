@@ -189,3 +189,10 @@ Missing using statement error: added 2 using statements as showed in potential f
 Build the solution... 4 successful. 
 Commit to github complted part 2.2
 Taking break at 04:00 PM
+
+Back at 5:10 PM
+Starting Part 2.3 of the assignment
+Made new controller called CategoryController.cs and modified using statements
+Added a new Category folder and razor view Index.cshtml added code given by sir
+Linked the indes.cshtml in _Layout.cshtml page inside dropdown menu....
+commiting changes to github
