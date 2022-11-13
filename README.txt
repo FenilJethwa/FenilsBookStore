@@ -172,3 +172,20 @@ Time to take a break......
 Date: 2022/11/13 Time: 2:53 PM
 
 Started Part 2.2 of the application
+2 folders inside FenilsBooks.DataAccess : Repository/IRepository
+IRepository.cs interface and modified the code 
+Repository.cs class in Repository and added the code provided by sir
+Added CategoryRepository.cs and ICategoryRepository.cs and modified the code accordingly
+Had an error in interface ICategoryRepository assembly reference, added a using statement of using .DataAccess Project
+Commited changes to github
+
+03:25 PM
+Added ISP_Call.cs and entered code as per ppt. Had error in Dynamic Parameter. Saw potential fizes and said to install Dapper
+Automatically downloaded the NuGet Paackage for dapper
+New file IUnitOfWork.cs in the IRepository folder modified it
+UnitOfWork.cs class added the interface implementations and extra code
+To make it accessible by the project, scoped it in the Startup.cs file.
+Missing using statement error: added 2 using statements as showed in potential fixes
+Build the solution... 4 successful. 
+Commit to github complted part 2.2
+Taking break at 04:00 PM

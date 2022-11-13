@@ -1,3 +1,5 @@
+using FenilsBooks.DataAccess.Repository;
+using FenilsBooks.DataAccess.Repository.IRepository;
 using FenilsBookStore.DataAccess.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -34,6 +36,7 @@ namespace FenilsBookStore
 
             services.AddDefaultIdentity<IdentityUser>()  // removed the option that set the identity user to false
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>(); // to make it accessible by project
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
