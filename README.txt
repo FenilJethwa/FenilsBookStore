@@ -143,7 +143,7 @@ it showing SqlServerValueGenerationStrategy does not exist in the  current conte
 5:10 PM completed Part-1 and added README.txt and README.md files
 
 ************* (Part-2 Again) *************
-05:19 PM Now Part-2 
+Time: 05:19 PM Now Part-2 
 2.1  Creating Db
 Build the application for checking there is no error....
 No error found... Moved further
@@ -169,7 +169,7 @@ Part-2.1 completed successfully
 
 Time to take a break......
 *********************************************************************************
-Date: 2022/11/13 Time: 2:53 PM
+Date: 2022-11-13 Time: 02:53 PM
 
 Started Part 2.2 of the application
 2 folders inside FenilsBooks.DataAccess : Repository/IRepository
@@ -205,7 +205,7 @@ Modify the Upsert.cshtml with @model statement
 Added the asp-action to Index.cshtml page....and run the application...not showing the create category or upsert page
 commiting changes and taking a break....06:10PM
 
-2022/11/14, 12:05 PM
+2022-11-14, Time: 12:05 PM
 Error resolved....added IActionResult POST result
 Changed the url in the category.js and then added save method in IUnitofWork.cs and removed the save changes method....
 Lets check the application....everything works good.....
@@ -215,3 +215,7 @@ Updated the delete button and modified the category.js file !!!
 Commit the git repo... 
 save the content and run the application in the browser.
 submit the file and make it ready to clone in repository
+ 
+ 11:33 AM
+ Check in the lab my application work successfully....
+ Update my readme.txt
