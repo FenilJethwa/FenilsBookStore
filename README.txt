@@ -204,3 +204,14 @@ Created partial views _CreateAndBackToListButton.cshtml and _EditAndBackToListBu
 Modify the Upsert.cshtml with @model statement
 Added the asp-action to Index.cshtml page....and run the application...not showing the create category or upsert page
 commiting changes and taking a break....06:10PM
+
+2022/11/14, 12:05 PM
+Error resolved....added IActionResult POST result
+Changed the url in the category.js and then added save method in IUnitofWork.cs and removed the save changes method....
+Lets check the application....everything works good.....
+
+2022-11-14  00:41 AM 
+Updated the delete button and modified the category.js file !!!
+Commit the git repo... 
+save the content and run the application in the browser.
+submit the file and make it ready to clone in repository

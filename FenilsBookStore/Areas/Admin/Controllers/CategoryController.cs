@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using FenilsBookStore.Area;
-using FenilsBookStore.DataAccess;
-using FenilsBooks.DataAccess.Repository.IRepository;
+﻿using FenilsBooks.DataAccess.Repository.IRepository;
 using FenilsBooks.DataAccess.Repository;
+using FenilsBookStore.DataAccess;
+using FenilsBookStore.Areas;
+using FenilsBookStore.Models;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,6 @@ namespace FenilsBookStore.Areas.Admin.Controllers
 
     public class CategoryController : Controller
     {
-
         private readonly IUnitOfWork _unitOfWork;
 
         public CategoryController(IUnitOfWork unitOfWork)
@@ -28,25 +28,55 @@ namespace FenilsBookStore.Areas.Admin.Controllers
             return View();
         }
 
-        public IActionResult Upsert(int? id)         // action method for Upsert
+
+        public IActionResult Upsert(int? id)        // action method for upsert
         {
-            Category category = new Category();
+            Category category = new Category();     //using pujasBooks.Model
+
             if (id == null)
             {
-                // This is for create
+                //this is for create
                 return View(category);
             }
 
-            // This is for edit
+            //this is for edit
             category = _unitOfWork.Category.Get(id.GetValueOrDefault());
+
             if (category == null)
             {
                 return NotFound();
             }
-            return View();
+
+            return View(category);
         }
 
-        // API calls here
+
+        // use HTTP POST to define the post-action method
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Upsert(Category category)
+        {
+            if (ModelState.IsValid)   // check all variables in the model (e.g. Name Required) to increase security
+            {
+                if (category.Id == 0)
+                {
+                    _unitOfWork.Category.Add(category);
+                    //_unitOfWork.save();
+                }
+                else
+                {
+                    _unitOfWork.Category.Update(category);
+                }
+
+                _unitOfWork.Save();
+                return RedirectToAction(nameof(Index));     // to see all the categories
+            }
+
+            return View(category);
+        }
+
+
+        // API calls here for Delete
         #region API CALLS
         [HttpGet]
         public IActionResult GetAll()
@@ -54,6 +84,20 @@ namespace FenilsBookStore.Areas.Admin.Controllers
             // return NotFound();
             var allObj = _unitOfWork.Category.GetAll();
             return Json(new { data = allObj });
+        }
+
+
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+            var objFromDb = _unitOfWork.Category.Get(id);
+            if (objFromDb == null)
+            {
+                return Json(new { success = false, message = "Error while deleting" });
+            }
+            _unitOfWork.Category.Remove(objFromDb);
+            _unitOfWork.Save();
+            return Json(new { success = true, message = "Delete Successfully" });
         }
         #endregion
     }
