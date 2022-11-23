@@ -261,3 +261,13 @@ Added a view called Index.cshtml in Product/Views folder.... and modified code t
 Created product.js and modified code as per sir....
 Run the application and check...had an error but outcome as per sir....
 Section 2 of assignment complete....commit to github
+
+Start Part-3.3 Product CRUD (3)
+Created an Upsert.cs file in Product in Views of Admin and modify the code given in the file by proffesor.
+Made account and domain in Tiny Cloud as feniljethwa copied the scr code and added textbox, function for validate input
+in the script.
+Run the application : 01:49 PM
+There is an error in the application and warring appears "DataTables warning: table id=tdlData - Ajax error"
+Uncommented Upsert action in ProductController.cs
+Run the application it works......
+Take a break 02:35 PM

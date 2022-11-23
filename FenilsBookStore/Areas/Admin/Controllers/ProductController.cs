@@ -29,7 +29,7 @@ namespace FenilsBookStore.Areas.Admin.Controllers
             return View();
         }
 
-        /*public IActionResult Upsert(int? id)
+        public IActionResult Upsert(int? id)
         {
             ProductVM productVM = new ProductVM()
             {
@@ -58,7 +58,7 @@ namespace FenilsBookStore.Areas.Admin.Controllers
                 return NotFound();
             }
             return View(productVM);
-        }*/
+        }
 
 
         // API calls here
