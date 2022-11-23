@@ -219,3 +219,26 @@ submit the file and make it ready to clone in repository
  11:33 AM
  Check in the lab my application work successfully....
  Update my readme.txt
+
+ *********************************************************************************
+							(Part-3)
+
+Date: 2022-11-22 Time: 11:58 PM
+Started Part-3.1 Cover Type CRUD.
+Added a class named as CoverType.cs in FenilsBooks.Models 
+Made another class named as Category.cs and added Name and Id in it
+Added class named as ICoverTypeRepository.cs interface and modified the code.
+Added  CoverTypeRepository and modified the code as per done in the previous part
+Update IUnitOfWork.cs and UnitOfWork.cs 
+Had an error in interface ICategoryRepository assembly reference, added a using statement of using .DataAccess Project
+Added migration with help of Project Manager Consloe named as: 20221123051442_AddCoverTypeToDb.cs
+Update-Database
+Now moved further for making CRUD pages
+Added CovertypeController.cs in Controllers of Admin
+Added Index.cshtml in Views>Category and update it
+
+12:38PM Run the application it works successfully
+Add new file named as coverType.js and update the code
+Created Upsert.cs Page for CoverType and change code as per Category> Upsert.cs
+Update my Readme.txt 
+Commit to GiTHub Repo.....01:04 AM
