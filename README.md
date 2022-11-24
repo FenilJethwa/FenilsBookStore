@@ -15,3 +15,7 @@ Named new MVC Web Application as "FenilsBookStore".
 2.2 Repository
 
 2.3 Category Crud 
+
+3.1 CoverType Crud
+
+3.2 Product Crud
