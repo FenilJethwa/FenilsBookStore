@@ -60,6 +60,27 @@ namespace FenilsBookStore.Areas.Admin.Controllers
             return View(productVM);
         }
 
+        //use HTTP POST to define the post-action method
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Upsert(Product product)
+        {
+            if (ModelState.IsValid)    //checks all validations in the model 
+            {
+                if (product.Id == 0)
+                {
+                    _unitOfWork.Product.Add(product);
+                }
+                else
+                {
+                    _unitOfWork.Product.Update(product);
+                }
+                _unitOfWork.Save();
+                return RedirectToAction(nameof(Index));   // to see all the categories
+            }
+            return View(product);
+        }
+
 
         // API calls here
         #region API CALLS

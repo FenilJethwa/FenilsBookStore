@@ -271,3 +271,16 @@ There is an error in the application and warring appears "DataTables warning: ta
 Uncommented Upsert action in ProductController.cs
 Run the application it works......
 Take a break 02:35 PM
+
+2022-11-24 Time: 05:55 PM
+Resumed my Application 
+Run application it works properly
+Made a folder in www.root of images/product
+In ProductController.cs configure the Product Upsert Post Action method by removing comment on it.
+Once again run the application add Category, Covertype and Product details of Perfumes it works successfully...
+Update my Readme.txt and Readme.md 
+Wohoooo........
+Done with the Part-3 
+
+06:01 PM
+
