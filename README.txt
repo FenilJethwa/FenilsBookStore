@@ -297,4 +297,5 @@ can run the application and add products but the ajax error od datbase table for
 Moving forward with home page at FenilsBookStore
 Added the controller methods need and updated index.cshtml code to show the books on home page....
 added the link and customer area reference to the _Layout.cshtml file.....
-Seems good for now.....will resolve the ajax method later...taking a break
+Seems good for now.....will resolve the ajax method later...taking a break : 08:20 PM 
+Update my Readme.txt 
