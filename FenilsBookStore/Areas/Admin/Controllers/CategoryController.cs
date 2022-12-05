@@ -78,14 +78,13 @@ namespace FenilsBookStore.Areas.Admin.Controllers
 
         // API calls here for Delete
         #region API CALLS
+
         [HttpGet]
         public IActionResult GetAll()
         {
-            // return NotFound();
             var allObj = _unitOfWork.Category.GetAll();
             return Json(new { data = allObj });
         }
-
 
         [HttpDelete]
         public IActionResult Delete(int id)
@@ -97,8 +96,10 @@ namespace FenilsBookStore.Areas.Admin.Controllers
             }
             _unitOfWork.Category.Remove(objFromDb);
             _unitOfWork.Save();
-            return Json(new { success = true, message = "Delete Successfully" });
+            return Json(new { success = true, message = "Delete Successful" });
         }
+
         #endregion
+
     }
 }

@@ -284,3 +284,11 @@ Done with the Part-3
 
 06:01 PM
 
+
+ *********************************************************************************
+							(Part-4)
+
+Date: 2022-12-04 Time: 06:20 PM
+Started Part-4 of my application checking for the errors freom the Git File given by the professor of Rick-Jose
+
+
