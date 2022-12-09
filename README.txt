@@ -299,3 +299,16 @@ Added the controller methods need and updated index.cshtml code to show the book
 added the link and customer area reference to the _Layout.cshtml file.....
 Seems good for now.....will resolve the ajax method later...taking a break : 08:20 PM 
 Update my Readme.txt 
+
+Date: 2022-12-09 Time: 02:14 PM
+Check my application it working properly.
+
+*********************************************************************************
+							(Part-5)
+
+Now started Part-5 of my assignment.
+Need to submit GitHub Link and for bonus marks I am doing Azure publish for local use.
+All Parts of my Application are done successfully.
+Update Readme.txt and Readme.md
+
+Date: 2022-12-09 Time: 02:17 PM 
